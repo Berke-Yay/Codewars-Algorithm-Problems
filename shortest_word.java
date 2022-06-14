@@ -1,6 +1,7 @@
 package codewars;
 
 public class shortest_word {
+    //This function returns the shortest word in a string input
     public static int findShort(String s) {
         String[] words = s.split("\\s");
         int result = words[0].length();
