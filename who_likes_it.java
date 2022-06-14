@@ -1,5 +1,6 @@
 package codewars;
 public class who_likes_it {
+    //Given an array of names, we need to display who had liked a post. But after three people, we will just display the number of remaining persons.
     public static String whoLikesIt(String... names) {
         switch (names.length) {
           case 0: return "no one likes this";
