@@ -2,6 +2,8 @@ package codewars;
 
 public class ten_minutes_walk {
     public static boolean isValid(char[] walk) {
+        //Given an array of chars, "snwe" represents the directions. Each direction takes one minute to go that way for 1 unit.
+        //In the array we need to control if the person will come to the same place afterwards and if it takes exactly 10 minutes
         //To return true, simply the length of the array should be 10.
         //Furthermore, the person should walk to south x times if he walks to north x times.
         //Same for west and east.
@@ -25,28 +27,5 @@ public class ten_minutes_walk {
         else{return false;}
         
       }
-      //A better solution
-      public static boolean isValid2(char[] walk) {
-        if (walk.length != 10) {
-          return false;
-        }
-        int x = 0, y = 0;
-        for (int i = 0; i < 10; i++) {
-          switch (walk[i]) {
-            case 'n':
-              y++;
-              break;
-            case 'e':
-              x++;
-              break;
-            case 's':
-              y--;
-              break;
-            case 'w':
-              x--;
-              break;
-          }
-        }
-        return x == 0 && y == 0;
-      }
+      
 }
