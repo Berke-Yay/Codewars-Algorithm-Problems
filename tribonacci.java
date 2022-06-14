@@ -1,7 +1,7 @@
 package codewars;
 public class tribonacci {
     public double[] tribonacci(double[] s, int n) {
-        // hackonacci me
+        //The function returns a tribonacci sequence to n elements with the given first three elements that are in array s.
           double[] sequence = new double[n];
           if(n==0){
               return sequence;
@@ -17,13 +17,5 @@ public class tribonacci {
           }
           
           return sequence;
-    }
-    //A better solution
-    public double[] tribonacci_better(double[] s, int n) {
-        double[] r = new double[n];
-        for(int i = 0; i < n; i++){
-          r[i] = (i<3)?s[i]:r[i-3]+r[i-2]+r[i-1];
-        }
-        return r;
     }
 }
